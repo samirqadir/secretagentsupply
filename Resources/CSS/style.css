@@ -1,0 +1,228 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.site_contents {
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+    width: auto;
+    height: 1.5rem;
+    margin: 0rem 1rem 0rem 0.5rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  margin: 0.66rem 0rem;
+}
+
+.banner {
+  background-image: url("../moto.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 25rem;
+}
+
+.banner .block {
+  background-color: black;
+  width: 20rem;
+  height: auto;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.banner p {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav.show_1024 {
+  display: none;
+}
+
+nav.hide_1024 {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  margin-bottom: 3rem;
+}
+
+nav .site_contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0rem;
+}
+
+nav a {
+  color: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.products .site_contents {
+  justify-content: space-between;
+}
+
+.prod_img {
+  width: 30%;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+
+.prod_img img {
+  height: auto;
+  width: 150px;
+  margin: auto;
+}
+
+.prod_img p {
+  border: 4px solid black;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
+.loc_hours {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.loc_hours .site_contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loc_hours .site_contents div {
+  width: 35%;
+}
+
+.loc_hours h3 {
+  padding: 1rem 2rem;
+  background-color: black;
+  font-weight: bold;
+}
+
+.loc_hours p {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 9rem;
+  background-color: black;
+}
+
+footer p {
+  width: auto;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav.hide_1024, .hide_1024 {
+    display: none;
+  }
+
+  nav.show_1024 {
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+    margin-bottom: 3rem;
+  }
+
+  nav.show_1024 .site_contents {
+    justify-content: center;
+  }
+
+  .prod_img {
+    width: 47%;
+  }
+
+  .prod_img img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .hide_470 {
+    display: none;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .block {
+    width: 100%;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .banner p {
+    font-size: 0.77rem;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+  }
+
+  .products .site_contents {
+    justify-content: center;
+  }
+
+  .prod_img {
+    width: 90%;
+  }
+
+  .prod_img img {
+    width: 150px;
+  }
+
+  .loc_hours .site_contents {
+    flex-direction: column;
+  }
+
+  .loc_hours .site_contents div {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+  }
+
+}
